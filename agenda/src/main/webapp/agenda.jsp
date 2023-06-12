@@ -1,9 +1,11 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
 <meta charset="utf-8">
-<title>Agenda de contatos</title>
-<link rel="stylesheet" href="estilos/index.css">
+<title>Insert title here</title>
+<link rel="stylesheet" href="agenda.css">
 </head>
 <body>
 	<header>
