@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="agenda.css">
+<link rel="stylesheet" href="estilos/agenda.css">
 </head>
 <body>
 	<header>
@@ -13,12 +13,12 @@
             <h1>AGENDA</h1>
         </div>
         <div class="logo">
-            <img src="imagens/icon-ga222ecfd9_1280.png" alt="" width="38px">
+            <img src="estilos/imagens/icon-ga222ecfd9_1280.png" alt="" width="38px">
         </div>
     </header>
     <main>
         <div>
-            <a href="main">ACESSAR</a>
+            <a href="main">NOVO CONTATO</a>
         </div>
     </main>
     <footer>
