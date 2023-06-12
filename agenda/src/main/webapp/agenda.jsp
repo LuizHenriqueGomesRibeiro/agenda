@@ -18,7 +18,7 @@
     </header>
     <main>
         <div>
-            <a href="main">NOVO CONTATO</a>
+            <a href="novo.html">NOVO CONTATO</a>
         </div>
     </main>
     <footer>
