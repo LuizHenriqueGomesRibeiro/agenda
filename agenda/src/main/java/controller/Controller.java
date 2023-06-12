@@ -49,8 +49,8 @@ public class Controller extends HttpServlet {
 	protected void novo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		contato.setNome(request.getParameter("nome"));
-		contato.setNome(request.getParameter("fone"));
-		contato.setNome(request.getParameter("email"));
+		contato.setFone(request.getParameter("fone"));
+		contato.setEmail(request.getParameter("email"));
 		
 		dao.inserir(contato);
 		response.sendRedirect("main");

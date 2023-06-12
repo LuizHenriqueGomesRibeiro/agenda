@@ -4,6 +4,9 @@
 <meta charset="utf-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="estilos/novo.css">
+<script type="text/javascript" src="script/jquery-3.7.0.js"></script>
+<script type="text/javascript" src="script/jquery.validate.js"></script>
+<script type="text/javascript"src="jquery.js"></script>
 </head>
 <body>
 	<header>
@@ -17,7 +20,7 @@
 	<main>
 		<div>
 			<h2>Criar novo contato</h2>
-			<form action="insert" name="frmContato">
+			<form action="insert" name="frmContato" id="formulario">
 				<p>Nome:</p>
 				<input type="text" name="nome" placeholder="nome"><br>
 				<p>Telefone:</p>
@@ -25,7 +28,7 @@
 				<p>E-mail:</p>
 				<input type="text" name="email" placeholder="E-mail"><br>
 				
-                <input type="button" value="Adicionar" class="botao">
+                <input type="submit" value="Adicionar" class="botao" onclick="validar()" id="button">
 			</form>
 		</div>
 	</main>

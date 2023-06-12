@@ -43,10 +43,10 @@ body main{
 }
 body main div{
     position: relative;
-    left: 55%;
-    top: 58%;
+    left: 50%;
+    top: 50%;
     transform: translate(-50%,-50%);
-    width: 380px;
+    width: 215px;
     height: 400px;
 }
 body main div h2{
