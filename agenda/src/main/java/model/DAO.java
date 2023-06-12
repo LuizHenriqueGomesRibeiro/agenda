@@ -2,6 +2,7 @@ package model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 
 public class DAO {
 	private String driver = "com.mysql.cj.jdbc.Driver";
@@ -30,6 +31,24 @@ public class DAO {
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e);
+		}
+	}
+	
+	public void inserir(JavaBeans contato) {
+		String create="INSERT INTO contatos (nome,fone,email) VALUES (?,?,?)";
+		try {
+			Connection con=conectar();
+			PreparedStatement pst=con.prepareStatement(create);
+			
+			pst.setString(1, contato.getNome());
+			pst.setString(2, contato.getFone());
+			pst.setString(3, contato.getEmail());
+			pst.executeUpdate();
+			
+			con.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.print(e);
 		}
 	}
 }

@@ -43,17 +43,17 @@ body main{
 }
 body main div{
     position: relative;
-    left: 50%;
+    left: 55%;
     top: 58%;
     transform: translate(-50%,-50%);
-    width: 200px;
+    width: 380px;
     height: 400px;
 }
 body main div h2{
     color: white;
 }
 body main div form input{
-    margin: auto;
+    margin: 5px;
     width: 192px;
 }
 body main div form input.botao{
@@ -87,4 +87,8 @@ body footer div p a{
 }
 body footer div p a:hover{
     color: #0a4b75;
+}
+
+.error{
+    color: white;
 }
