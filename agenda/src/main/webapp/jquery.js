@@ -1,5 +1,5 @@
 jQuery(function() {
-	if (jQuery("#formulario").length){
+	if(jQuery("#formulario").length){
 		jQuery("#formulario").validate({
 			rules: {
 				nome: {

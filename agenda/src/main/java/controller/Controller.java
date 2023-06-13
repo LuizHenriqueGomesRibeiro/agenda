@@ -1,7 +1,9 @@
 package controller;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -43,7 +45,11 @@ public class Controller extends HttpServlet {
 	
 	protected void contatos(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.sendRedirect("agenda.jsp");
+		ArrayList<JavaBeans> lista=dao.listar();
+		
+		request.setAttribute("contatos", lista);
+		RequestDispatcher rd=request.getRequestDispatcher("agenda.jsp");
+		rd.forward(request, response);
 	}
 	
 	protected void novo(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

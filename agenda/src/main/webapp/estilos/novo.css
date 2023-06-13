@@ -55,6 +55,12 @@ body main div h2{
 body main div form input{
     margin: 5px;
     width: 192px;
+    border: none;
+    padding: 3px;
+    color: black;
+}
+body main div form input::placeholder{
+	color: black;
 }
 body main div form input.botao{
     margin-top: 25px;
@@ -90,5 +96,5 @@ body footer div p a:hover{
 }
 
 .error{
-    color: white;
+    color: red;
 }

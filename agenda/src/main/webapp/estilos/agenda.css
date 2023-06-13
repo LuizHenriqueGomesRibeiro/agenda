@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+/*
+    #ffcfad
+    #5e5a54
+    #ffe4b8
+    #e6d1b1
+    #b8aa95
+*/
+
 html{
     margin: 0px;
     padding: 0px;
@@ -45,16 +53,44 @@ body main div{
     position: relative;
     width: 309px;
     margin: auto;
-    top: 50%;
-    transform: translate(0,-50%);
+    top: 10%;
 }
 body main div a{
     color: #5191c1;
     text-decoration: none;
     font-size: 40px;
 }
-body main a:hover{
+body main div a:hover{
     color: #0a4b75;
+}
+body main aside{
+    position: relative;
+    margin: auto;
+    top: 80px;
+    height: 384px;
+    width: 1025px;
+    font-family: sans-serif;
+    color: white;
+    overflow-y: scroll; 
+}
+body main aside table th{
+    background-color: #0a4b75;
+    padding: 15px;
+}
+body main aside table td{
+    padding: 10px;
+}
+.idcon{
+    width: 20px;
+}
+.nome{
+    width: 290px;
+}
+.fone{
+    width: 100px;
+}
+.email{
+    width: 160px;
 }
 
 body footer{
