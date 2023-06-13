@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+html{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(imagens/man-g746926177_1280.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    width: 55%;
+    height: 70%;
+    background-color: rgba(0, 0, 0, 0.438);
+    position: relative;
+    left: 48%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+body header{
+    height: 100px;
+    background-color: #0a4b75;
+}
+body header div.titulo{
+    position: relative;
+    float: left;
+    font-family: sans-serif;
+    top: 15px;
+    left: 45px;
+}
+body header div.logo{
+    position: relative;
+    float: right;
+    top: 25px;
+    left: -45px;
+}
+
+body main{
+    height: 79.1%;
+}
+body main div{
+    position: relative;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%,-50%);
+    width: 215px;
+    height: 400px;
+}
+body main div h2{
+    color: white;
+}
+body main div form input{
+    margin: 5px;
+    width: 192px;
+    border: none;
+    padding: 3px;
+    color: black;
+}
+body main div form input::placeholder{
+	color: black;
+}
+body main div form input.botao{
+    margin-top: 25px;
+    padding: 8px;
+    width: 200px;
+    background-color: #0a4b75;
+    border: none;
+    border-radius: 5px;
+}
+body main div form input.botao:hover{
+    color: white;
+    cursor: pointer;
+}
+body main div form p{
+    color: white;
+}
+
+body footer{
+    position: relative;
+    background-color: #5191c1;
+}
+body footer div p{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+body footer div p a{
+    color: black;
+    text-decoration: none;
+}
+body footer div p a:hover{
+    color: #0a4b75;
+}
+
+.error{
+    color: red;
+}
