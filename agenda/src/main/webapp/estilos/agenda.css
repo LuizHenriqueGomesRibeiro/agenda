@@ -76,21 +76,46 @@ body main aside{
 body main aside table th{
     background-color: #0a4b75;
     padding: 15px;
+    margin: 0px;
 }
 body main aside table td{
     padding: 10px;
 }
+body main aside table a.editar{
+    text-decoration: none;
+    color: white;
+    background-color: #5191c1; 
+    border-radius: 5px;
+    padding: 10px;
+}
+body main aside table a.editar:hover{
+	background-color: #083d61;
+}
+body main aside table a.excluir{
+    text-decoration: none;
+    color: white;
+    background-color: red; 
+    border-radius: 5px;
+    padding: 10px;
+}
+body main aside table a.excluir:hover{
+	background-color: #bb0101;
+}
 .idcon{
-    width: 20px;
+    width: 21px;
 }
 .nome{
-    width: 290px;
+    width: 350px;
 }
 .fone{
-    width: 100px;
+    width: 110px;
 }
 .email{
-    width: 160px;
+    width: 225px;
+}
+.opcoes{
+	width:126px;
+	margin: 0px 0px 0px 0px;
 }
 
 body footer{

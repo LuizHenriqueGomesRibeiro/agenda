@@ -15,7 +15,7 @@ import model.JavaBeans;
 /**
  * Servlet implementation class Controller
  */
-@WebServlet(urlPatterns= {"/main","/insert"})
+@WebServlet(urlPatterns= {"/main","/insert","/select"})
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	DAO dao=new DAO();
