@@ -11,7 +11,6 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 <meta charset="utf-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="estilos/agenda.css">
-<script type="text/javascript"src="script/javascript.js"></script>
 <script type="text/javascript" src="script/jquery-3.7.0.js"></script>
 <script type="text/javascript" src="script/jquery.validate.js"></script>
 <script type="text/javascript"src="script/jquery.js"></script>
