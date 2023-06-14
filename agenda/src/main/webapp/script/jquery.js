@@ -40,24 +40,15 @@ jQuery(function() {
 	}
 });
 
-/*
 jQuery(function(){
 	jQuery("a.excluir").click(function(){
-		let resposta=confirm("Confirma a exclusão deste contato?")
-		if(resposta===true){
-			window.location.href="delete?idcon="+idcon;
-		}
+		confirmar();
 	});
 });
-*/
 
-jQuery(function(){
-	jQuery("a.excluir").click(function(){
-		let resposta=confirm("Confirma a exclusão deste contato?")
-		if(resposta===true){
-			function confirmar(idcon){
-				window.location.href="delete?idcon="+idcon
-			}
+function confirmar(idcon){
+	let resposta=confirm("Confirma a exclusão deste contato?")
+	if(resposta===true){
+		window.location.href="delete?idcon="+idcon
 		}
-	});
-});
+}
