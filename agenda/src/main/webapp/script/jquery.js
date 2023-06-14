@@ -40,8 +40,9 @@ jQuery(function() {
 	}
 });
 
-jQuery(function(){
-	jQuery("a.excluir").click(function(){
-		alert("Confirma a exclusão deste contato?")
-	})
-})
+function confirmar(idcon){
+	let resposta=confirm("Confirma a exclusão deste contato?")
+	if(resposta===true){
+		window.location.href="delete?idcon="+idcon
+		}
+}
