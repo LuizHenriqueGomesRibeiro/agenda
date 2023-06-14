@@ -40,3 +40,8 @@ jQuery(function() {
 	}
 });
 
+jQuery(function(){
+	jQuery("a.excluir").click(function(){
+		alert("Confirma a exclusão deste contato?")
+	})
+})
