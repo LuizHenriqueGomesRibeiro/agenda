@@ -40,12 +40,6 @@ jQuery(function() {
 	}
 });
 
-jQuery(function(){
-	jQuery("a.excluir").click(function(){
-		confirmar();
-	});
-});
-
 function confirmar(idcon){
 	let resposta=confirm("Confirma a exclusão deste contato?")
 	if(resposta===true){
