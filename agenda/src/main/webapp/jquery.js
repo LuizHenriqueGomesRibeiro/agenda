@@ -40,3 +40,9 @@ jQuery(function() {
 	}
 });
 
+function confirmar(){
+	let resposta=confirm("Confirma a exclusão deste contato?")
+	if(resposta===true)`{
+		alert(idcon)`
+}
+
