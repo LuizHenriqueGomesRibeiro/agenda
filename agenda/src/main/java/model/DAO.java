@@ -95,7 +95,7 @@ public class DAO {
 			con.close();
 		} catch (Exception e) {
 			// TODO: handle exception
-			System.out.println();
+			System.out.println(e);
 		}
 	}
 	
@@ -108,6 +108,20 @@ public class DAO {
 			pst.setString(2, contato.getFone());
 			pst.setString(3, contato.getEmail());
 			pst.setString(4, contato.getIdcon());
+			pst.executeUpdate();
+			con.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}
+	}
+	
+	public void deletar(JavaBeans contato) {
+		String delete="DELETE FROM contatos where idcon=?";
+		try {
+			Connection con=conectar();
+			PreparedStatement pst=con.prepareStatement(delete);
+			pst.setString(1, contato.getIdcon());
 			pst.executeUpdate();
 			con.close();
 		} catch (Exception e) {

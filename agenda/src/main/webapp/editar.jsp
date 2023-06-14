@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="estilos/editar.css">
 <script type="text/javascript" src="script/jquery-3.7.0.js"></script>
 <script type="text/javascript" src="script/jquery.validate.js"></script>
-<script type="text/javascript"src="jquery.js"></script>
+<script type="text/javascript"src="script/jquery.js"></script>
 </head>
 <body>
 	<header>

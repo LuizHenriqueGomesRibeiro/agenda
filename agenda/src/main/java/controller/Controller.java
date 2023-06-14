@@ -15,7 +15,7 @@ import model.JavaBeans;
 /**
  * Servlet implementation class Controller
  */
-@WebServlet(urlPatterns= {"/main","/insert","/select","/update"})
+@WebServlet(urlPatterns= {"/main","/insert","/select","/update","/delete"})
 public class Controller extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	DAO dao=new DAO();
@@ -44,6 +44,9 @@ public class Controller extends HttpServlet {
 		else if(action.equals("/update")) {
 			editar(request,response);
 		}
+		else if(action.equals("/delete")) {
+			excluir(request,response);
+		}
 		else {
 			response.sendRedirect("index.html");
 		}
@@ -70,12 +73,7 @@ public class Controller extends HttpServlet {
 		String idcon=request.getParameter("idcon");
 		contato.setIdcon(idcon);
 		dao.selecionar(contato);
-		
-		System.out.println(contato.getIdcon());
-		System.out.println(contato.getNome());
-		System.out.println(contato.getFone());
-		System.out.println(contato.getEmail());
-		
+
 		request.setAttribute("idcon", contato.getIdcon());
 		request.setAttribute("nome", contato.getNome());
 		request.setAttribute("fone", contato.getFone());
@@ -86,11 +84,6 @@ public class Controller extends HttpServlet {
 	}
 	
 	protected void editar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println(request.getParameter("idcon"));
-		System.out.println(request.getParameter("nome"));
-		System.out.println(request.getParameter("fone"));
-		System.out.println(request.getParameter("email"));
-		
 		contato.setIdcon(request.getParameter("idcon"));
 		contato.setNome(request.getParameter("nome"));
 		contato.setFone(request.getParameter("fone"));
@@ -98,6 +91,13 @@ public class Controller extends HttpServlet {
 		
 		dao.alterar(contato);
 		
+		response.sendRedirect("main");
+	}
+	
+	protected void excluir(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String idcon=request.getParameter("idcon");
+		contato.setIdcon(idcon);
+		dao.deletar(contato);
 		response.sendRedirect("main");
 	}
 }
