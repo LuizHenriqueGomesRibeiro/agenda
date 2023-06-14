@@ -24,7 +24,7 @@
 			<h2>Editar contato</h2>
 			<form action="update" name="frmContato" id="formulario">
 				<p>Id:</p>
-				<input type="text" name="id" readonly value="<%out.print(request.getAttribute("idcon"));%>"><br>
+				<input type="text" name="idcon" readonly value="<%out.print(request.getAttribute("idcon"));%>"><br>
 				<p>Nome:</p>
 				<input type="text" name="nome" value="<%out.print(request.getAttribute("nome"));%>"><br>
 				<p>Telefone:</p>
