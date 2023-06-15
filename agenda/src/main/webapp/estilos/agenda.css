@@ -134,3 +134,78 @@ body footer div p a{
 body footer div p a:hover{
     color: #0a4b75;
 }
+
+div.tela{
+    background-color: #5191c1;
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+div.tela div.letras{
+    height: 20%;
+    width: 101%;
+    background-color: #083d61;
+    margin: -31px 0px 0px 0px;
+}
+div.tela div.letras h2{
+    margin: 0px;
+    padding: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    color: #5191c1;
+}
+div.tela div.letras p{
+    font-family: sans-serif;
+    text-align: center;
+    color: #083d61;
+}
+div.tela div.confirmacao{
+    height: 20.7%;
+    width: 98%;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-family: sans-serif;
+    display: inline-block;
+}
+div.tela div.confirmacao div.sim{
+    float: left;
+    margin: 0px 0px 0px 5px;
+    background-color: black;
+    height: 70px;
+    width: 118px;
+    background-color: #083d61;
+    border-radius: 7px;
+}
+div.tela div.confirmacao div.nao{
+    float: right;
+    margin: 0px 15px 0px 0px;
+    background-color: black;
+    height: 70px;
+    width: 240px;
+    background-color: red;
+    border-radius: 7px;
+}
+div.tela div.confirmacao div.sim a{
+    color: white;
+    text-align: center;
+    top: 12px;
+    left: 24px;
+    position: relative;
+}
+div.tela div.confirmacao div.nao a{
+    color: white;
+    text-align: center;
+    top: 12px;
+    left: 14px;
+    position: relative;
+}
+div.tela div.confirmacao div.sim:hover{
+    background-color: #073350;
+}
+div.tela div.confirmacao div.nao:hover{
+    background-color: rgb(196, 0, 0);
+}

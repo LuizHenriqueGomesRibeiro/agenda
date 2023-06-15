@@ -59,6 +59,20 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 				</tbody>
 			</table>
 		</aside>
+		<div class="tela">
+            <div class="letras">
+                <h2>Confirmação de exclusão</h2>
+                <p>VOCÊ DESEJA MESMO APAGAR ESTE CONTATO?</p>
+            </div>
+            <div class="confirmacao">
+                <div class="sim">
+                    <a href="#">Sim</a>
+                </div>
+                <div class="nao">
+                    <a href="#">CANCELAR</a>
+                </div>
+            </div>
+        </div>
 	</main>
 	<footer>
 		<div>
