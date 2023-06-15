@@ -41,5 +41,5 @@ jQuery(function() {
 });
 
 function confirmar(idcon){
-		window.location.href="delete?idcon="+idcon
+	window.location.href="delete?idcon="+idcon
 }
