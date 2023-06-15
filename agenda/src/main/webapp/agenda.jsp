@@ -11,10 +11,7 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 <meta charset="utf-8">
 <title>Insert title here</title>
 <link rel="stylesheet" href="estilos/agenda.css">
-<<<<<<< HEAD
 <script type="text/javascript"src="script/jquery.js"></script>
-=======
->>>>>>> refs/heads/master
 <script type="text/javascript" src="script/jquery-3.7.0.js"></script>
 <script type="text/javascript" src="script/jquery.validate.js"></script>
 <script type="text/javascript"src="script/confirmacao.js"></script>
@@ -55,14 +52,20 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 						<td>
 							<a href="select?idcon=<%=lista.get(i).getIdcon()%>" class="editar">Editar</a>
 							<a class="excluir">Excluir</a>
-							<div class="confirmacao">
-                				<div class="sim">
-                    				<a href="javascript: confirmar(<%=lista.get(i).getIdcon()%>)" >Sim</a>
-                				</div>
-                				<div class="nao">
-                    				<a href="#">CANCELAR</a>
-                				</div>
-            				</div>
+							<div class="tela">
+								<div class="letras">
+									<h2>Confirmação de exclusão</h2>
+									<p>VOCÊ DESEJA MESMO APAGAR ESTE CONTATO?</p>
+								</div>
+								<div class="confirmacao">
+									<div class="sim">
+										<a href="javascript: confirmar(<%=lista.get(i).getIdcon()%>)">Sim</a>
+									</div>
+									<div class="nao">
+										<a href="#">CANCELAR</a>
+									</div>
+								</div>
+							</div>
 						</td>
 					</tr>
 					<%
@@ -71,12 +74,6 @@ ArrayList<JavaBeans> lista = (ArrayList<JavaBeans>) request.getAttribute("contat
 				</tbody>
 			</table>
 		</aside>
-		<div class="tela">
-            <div class="letras">
-                <h2>Confirmação de exclusão</h2>
-                <p>VOCÊ DESEJA MESMO APAGAR ESTE CONTATO?</p>
-            </div>
-        </div>
 	</main>
 	<footer>
 		<div>

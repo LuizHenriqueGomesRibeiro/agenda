@@ -41,12 +41,5 @@ jQuery(function() {
 });
 
 function confirmar(idcon){
-<<<<<<< HEAD
-	window.location.href="delete?idcon="+idcon
-=======
-	let resposta=confirm("Confirma a exclusão deste contato?")
-	if(resposta===true){
 		window.location.href="delete?idcon="+idcon
-		}
->>>>>>> refs/heads/master
 }
